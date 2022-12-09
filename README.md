@@ -34,19 +34,19 @@ Instalar requirements.txt
 pip install -r requirements.txt
 ```
 
-Crear archivo <code>SQLite3</code> para la base de datos
+Crear archivo <code>SQLite3</code> para la base de datos dentro de <code>django_portfolio</code>
 ```bash
 touch db.sqlite3
 ```
 
-Crear archivo <code>.env</code> en la misma carpeta que <code>zproject</code> para variables de entorno
+Crear archivo <code>.env</code> en la carpeta <code>zproject</code> para configurar las variables de entorno
 ```bash
 touch .env
 ```
 
-Agregue una clave secreta, como se hace en el ejemplo siguiente
+Agregue una clave secreta en el archivo <code>.env</code>, como se hace en el ejemplo siguiente
 ```
-SECRET_KEY=Esta_es_el_password
+SECRET_KEY=This_is_the_password
 ```
 
 Realice las migraciones correspondientes para las bases de datos
@@ -58,7 +58,7 @@ python manage.py migrate
 
 ## Despliegue 📦
 
-Abrir shell, ubicarse en la carpeta que contiene la carpeta <code>env, zproject, ... </code>:
+Abrir shell, ubicarse en la carpeta <code>django_portfolio</code>
 ```bash
 python manage.py runserver
 ```
