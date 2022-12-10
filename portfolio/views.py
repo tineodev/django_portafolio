@@ -12,10 +12,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from ipware import get_client_ip
 # Create your views here.
 
-class paginas(View):
-    def get(self, request):
-        template_name = 'portfolio/paginas.html'
-        return render(request, template_name)
 
 class Index(View):
     def get(self, request):
